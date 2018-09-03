@@ -1,0 +1,26 @@
+{
+  "name": "biblioteca_cartao",
+  "version": "1.0.0",
+  "description": "Desafio 1 - Cartao - Sprint 4",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatianaemanuelle/biblioteca_cartao.git"
+  },
+  "author": "Thatiana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thatianaemanuelle/biblioteca_cartao/issues"
+  },
+  "homepage": "https://github.com/thatianaemanuelle/biblioteca_cartao#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
