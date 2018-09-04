@@ -9,27 +9,12 @@ function cardValidator(credNumber) {
     throw new Error("Quantidade de numeros menor que o esperado");
   }
 
-  var array = credNumber.toString().split("").reverse();
-
-  var totalSum = 0;
-
-  for (var i = 0; i < array.length; i++) {
-    if (i % 2 === 1) {
-      var onlyOdd = parseInt(array[i]) * 2;
-      if (onlyOdd >= 10) {
-        totalSum += parseInt(onlyOdd / 10) + (onlyOdd % 10);
-      }
-
-      //logica de leticia <3 credNumber[i] * 2 > 9 ? onlyOdd - 9 : onlyOdd;
-    } else {
-      totalSum += parseInt(array[i]);
-    }
-  }
-
-  if (totalSum % 10 === 0) {
-    return true;
-  } else {
-    return false;
+  else {
+    var sum = 0, even = false;
+    var cardTest = String(credNumber).split("").reverse().forEach(function(dstr){ d = parseInt(dstr);
+        sum += ((even = !even) ? d : (d < 5) ? d * 2 : (d - 5) * 2 + 1);
+      });
+    return (sum % 10 == 0);
   }
 }
 
