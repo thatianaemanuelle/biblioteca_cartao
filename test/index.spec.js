@@ -34,7 +34,7 @@ describe('card', function () {
         // Quando o numero for um inteiro e for invalido deve retornar false.
         describe('Quando se o cartao for invalido deve retornar false.', function () {
             it('Deve lancar um erro.', function () {
-                expect(card.cardValidator(5555666677778883)).to.be.false;
+                expect(card.cardValidator(1111111111111111)).to.be.false;
             });
         });
     });
