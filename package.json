@@ -1,6 +1,6 @@
 {
   "name": "biblioteca_cartao",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Desafio 1 - Cartao - Sprint 4",
   "main": "index.js",
   "directories": {
