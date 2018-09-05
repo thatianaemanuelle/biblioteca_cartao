@@ -28,7 +28,7 @@ describe('card', function () {
     // Quando o numero for um inteiro e for um cartão válido deve retornar true, 
     describe('Quando o numero for um inteiro e for um cartão válido deve retornar true.', function () {
       it('Deve lancar um erro.', function () {
-        expect(card.cardValidator(5555666677778884)).to.be.true;
+        expect(card.cardValidator(5162926370126905)).to.be.true;
       });
     });
     // Quando o numero for um inteiro e for invalido deve retornar false.
