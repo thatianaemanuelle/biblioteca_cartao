@@ -11,8 +11,9 @@ function cardValidator(credNumber) {
 
   else {
     var sum = 0, even = false;
-    var cardTest = String(credNumber).split("").reverse().forEach(function (dstr) {
-      d = parseInt(dstr);
+    var cardTest = String(credNumber).split("").reverse();
+    cardTest.forEach(function (dstr) {
+      var d = parseInt(dstr);
       sum += ((even = !even) ? d : (d < 5) ? d * 2 : (d - 5) * 2 + 1);
     });
     return (sum % 10 == 0);
